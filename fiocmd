@@ -1,0 +1,2 @@
+fio -ioengine=rbd -pool=testpool -rbdname=testimg -bs=4k -direct=0 -thread -rw=randwrite -size=16g -directory=/tmp -name='randwrite-4k-d1-n1' -iodepth=1 -runtime=120 --numjobs 1 --group_reporting -unlink=1 -norandommap=1 -randrepeat=0 -ramp_time=0 -invalidate=1
+

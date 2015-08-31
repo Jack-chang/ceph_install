@@ -1,0 +1,13 @@
+ceph osd pool create .rgw 64 64
+ceph osd pool create .rgw.root 64 64
+ceph osd pool create .rgw.control 64 64
+ceph osd pool create .rgw.gc 64 64
+ceph osd pool create .rgw.buckets 64 64
+ceph osd pool create .rgw.buckets.index 64 64
+ceph osd pool create .log 64 64
+ceph osd pool create .intent-log 64 64
+ceph osd pool create .usage 64 64
+ceph osd pool create .users 64 64
+ceph osd pool create .users.email 64 64
+ceph osd pool create .users.swift 64 64
+ceph osd pool create .users.uid 64 64

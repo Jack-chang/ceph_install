@@ -1,0 +1,13 @@
+[global]
+ioengine=libaio
+direct=1
+
+directory=/data2/
+invalidate=1
+unlink=1
+
+[test]
+size=20G
+bs=4k
+rw=write
+iodepth=32
